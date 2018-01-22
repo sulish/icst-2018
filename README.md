@@ -1,6 +1,6 @@
 <a href="https://icst-2017.ugm.ac.id/"><img src="https://icst-2017.ugm.ac.id/images/logos/logo.svg" height="142px" align="right"></a>
 
-# Website for the ICST 2017
+# Website for the ICST 2018
 
 This is the website for the International Conference on Science and Technology 2017, hosted by Universitas Gadjah Mada on 11&ndash;12 July 2017.
 
