@@ -1,8 +1,8 @@
-<a href="https://icst-2017.ugm.ac.id/"><img src="https://icst-2017.ugm.ac.id/images/logos/logo.svg" height="142px" align="right"></a>
+<a href="http://icst.ugm.ac.id/2018/"><img src="http://icst.ugm.ac.id/2018/images/logos/logo.svg" height="142px" align="right"></a>
 
 # Website for the ICST 2018
 
-This is the website for The International Conference on Science and Technology 2018, hosted by Universitas Gadjah Mada on 7&ndash;8 August 2018.
+This is the website for The 4<sup>th</sup> International Conference on Science and Technology (ICST 2018), hosted by Universitas Gadjah Mada on 7&ndash;8 August 2018.
 
 ## Credits
 
@@ -36,7 +36,7 @@ This is the website for The International Conference on Science and Technology 2
 
 ### Jumbotron
 
-+ Background is by Harry via [Freepik](http://www.freepik.com/free-vector/technological-background-with-a-circuit_951745.htm); modified to increase empty space in the centre and fit the image to wide devices.
++ Background is by [@davieiycode](https://github.com/davieiycode).
 
 ### Symposia images
 
