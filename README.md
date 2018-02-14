@@ -1,8 +1,8 @@
-<a href="https://icst-2017.ugm.ac.id/"><img src="https://icst-2017.ugm.ac.id/images/logos/logo.svg" height="142px" align="right"></a>
+<a href="http://icst.ugm.ac.id/2018/"><img src="http://icst.ugm.ac.id/2018/images/logos/logo.svg" height="142px" align="right"></a>
 
 # Website for the ICST 2018
 
-This is the website for the International Conference on Science and Technology 2017, hosted by Universitas Gadjah Mada on 11&ndash;12 July 2017.
+This is the website for The 4<sup>th</sup> International Conference on Science and Technology (ICST 2018), hosted by Universitas Gadjah Mada on 7&ndash;8 August 2018.
 
 ## Credits
 
@@ -10,7 +10,6 @@ This is the website for the International Conference on Science and Technology 2
 
 + [@jaybaeta](https://github.com/jaybaeta)
 + [@akhsin](https://github.com/akhsin)
-+ [Faculty of Mathematics and Natural Sciences, Universitas Gadjah Mada](http://mipa.ugm.ac.id/fix/?lang=en)
 
 ### Supporting contributors
 
@@ -37,17 +36,19 @@ This is the website for the International Conference on Science and Technology 2
 
 ### Jumbotron
 
-+ Background is by Harry via [Freepik](http://www.freepik.com/free-vector/technological-background-with-a-circuit_951745.htm); modified to increase empty space in the centre and fit the image to wide devices.
++ Background is by [@davieiycode](https://github.com/davieiycode).
 
 ### Symposia images
 
 All symposia images are licensed under the Creative Commons via Flickr.
 
-+ ANNUM: [University of Exeter](https://www.flickr.com/photos/26126239@N02/7420374766/); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
-+ Computer: [Amber Case](https://www.flickr.com/photos/caseorganic/4606079980/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
-+ Geomaritime: [emjaune](https://www.flickr.com/photos/aimeili/4538999195/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
-+ OMICS: [The Barry Callebaut Group](https://www.flickr.com/photos/barrycallebautgroup/22507987442/); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
-+ Infrastructure Technology: [UC Davis College of Engineering](https://www.flickr.com/photos/ucdaviscoe/9371145701/); [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
++ Computer and Information Technology: [Ars Electronica / Robert Bauernhansl](https://www.flickr.com/photos/arselectronica/37525627164/); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
++ Electronics, Communication, Control, and Instrumentation: [NASA's Marshall Space Flight Center](https://www.flickr.com/photos/nasamarshall/33350284091/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
++ Environmental and Earth Science: [Vilma](https://www.flickr.com/photos/vil/4464588404/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
++ Material Science and Chemistry: [Catface27](https://www.flickr.com/photos/catsanchez/15951257277/); [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
++ Mechanical and Industrial Engineering: [Christophe Nguyen](https://www.flickr.com/photos/christophenguyen/8548743119/); [All rights reserved]
++ Power and Energy: [Nate2b](https://www.flickr.com/photos/napdsp/4991007667/); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
++ Remote Sensing and Geomatics: [NASA's Marshall Space Flight Center](https://www.flickr.com/photos/nasamarshall/25096846628/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
 
 ### Other images
 
