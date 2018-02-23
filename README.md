@@ -43,7 +43,7 @@ This is the website for The 4<sup>th</sup> International Conference on Science a
 All symposia images are licensed under the Creative Commons via Flickr.
 
 + Computer and Information Technology: [Ars Electronica / Robert Bauernhansl](https://www.flickr.com/photos/arselectronica/37525627164/); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
-+ Electronics, Communication, Control, and Instrumentation: [NASA's Marshall Space Flight Center](https://www.flickr.com/photos/nasamarshall/33350284091/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
++ Electronics, Communication, Control, and Instrumentation: [Jakub Jankiewicz](https://www.flickr.com/photos/jcubic/12237986156/); [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 + Environmental and Earth Science: [Vilma](https://www.flickr.com/photos/vil/4464588404/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
 + Material Science and Chemistry: [Catface27](https://www.flickr.com/photos/catsanchez/15951257277/); [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 + Mechanical and Industrial Engineering: [Andrew Magill](https://www.flickr.com/photos/amagill/3268315787/); [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
