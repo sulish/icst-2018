@@ -90,6 +90,7 @@
             <div class="dropdown-menu scrollable-menu" role="menu">
               <a class="dropdown-item" href="../article/fees.html">Fees</a>
               <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Payment procedure</span>
+              <a class="dropdown-item" href="../article/payment-confirmation-presenter.html">Payment confirmation</a>
               <div class="dropdown-divider"></div>
               <span class="dropdown-item disabled" style="color: #7FA3CB;">Presenter guidelines</span>
               <a class="dropdown-item" href="../article/author-guidelines.html">Author guidelines</a>
@@ -97,7 +98,7 @@
               <a class="dropdown-item" href="../article/downloads.html">Download guidelines and templates</a>
               <div class="dropdown-divider"></div>
               <span class="dropdown-item disabled" style="color: #7FA3CB;">Tutorials and help</span>
-             <a class="dropdown-item" href="../article/edas.html">Edas</a>
+             <a class="dropdown-item" href="../article/edas-tutorial.html">Edas</a>
               <a class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed" href="../article/ttp.html">Trans Tech Publications</a>
               <a class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed" href="../article/download-guidebook-presenters.html">Download Guidebook</a>
               
@@ -113,6 +114,7 @@
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="../article/fees.html">Fees</a>
               <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Payment procedure</span>
+              <a class="dropdown-item" href="../article/payment-confirmation-non-presenter.html">Payment confirmation</a>
               <div class="dropdown-divider"></div>
               <span class="dropdown-item disabled" style="color: #7FA3CB;">Tutorials and help</span>
               <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Account Registration</span>
@@ -122,14 +124,14 @@
             </div>
           </li>
           <!-- MEDIA -->
-          <!--<li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown">Media</a>
             <div class="dropdown-menu dropdown-menu-right" role="menu">
               <a class="dropdown-item" href="../article/icst-2017-in-images-and-words.html">The ICST 2018 in images and words</a>
               <a class="dropdown-item" href="https://flic.kr/s/aHsm3pHwZd">Images from the conference (Flickr)</a>
             </div>
           </li>
-          <!-- DOWNLOADS -->
+          <!-- <!DOWNLOADS  -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="../index.html" data-toggle="dropdown">Downloads</a>
             <div class="dropdown-menu dropdown-menu-right scrollable-menu" role="menu">
@@ -147,6 +149,19 @@
       <a href="../article/submissions.html" class="btn btn-success nav-register text-uppercase">Register</a>
     </nav>
 
+    <div class="container pb-5" >
+    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active program-title" data-toggle="tab" href="#day1" role="tab"><span class="badge badge-default badge-pill mr-md-2">1</span><br class="hidden-md-up"> Account Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link program-title" data-toggle="tab" href="#day2" role="tab"><span class="badge badge-default badge-pill mr-md-2">2</span><br class="hidden-md-up"> Paper Submission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link program-title" data-toggle="tab" href="#" role="tab"><span class="badge badge-default badge-pill mr-md-2">3</span><br class="hidden-md-up"> Camera ready</a>
+        </li>
+      </ul>
+
     <!-- BREADCRUMBS -->
     <div class="container">
       <nav class="breadcrumb" style="background-color: transparent">
@@ -156,9 +171,9 @@
     </div>
 
     <!-- CONTENT -->
-    
-    <div class="container pb-5" >
-      <span id="edas" class="title"></span>
+    <div class="tab-content" >
+    <div id="day1" class="=container pb-5 tab-pane active" role="tabpanel">
+      <span class="title"></span>
       <div class="row">
       <div>
       <h1>EDAS Account Registration Tutorial</h1>
@@ -223,8 +238,39 @@
           <div>
             <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
           </div>
-          <br>
-          <h1>EDAS Full Paper Submission Tutorial</h1>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="row py-5">
+            
+            <!-- CARD: DOWNLOAD -->
+            <div class="col-sm-6">
+              <div class="card text-center">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Download EDAS Guidebook</h3>
+                </div>
+                <div class="card-block">
+                  <p class="card-text">
+                    <!-- <a href="../downloads/epaper-guidebook.pdf"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br> -->
+                    <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    <!--PAPER SUBMISSION-->
+    
+    <div id="day2" class="=container tab-pane fade " role="tabpanel">
+      <span class="title"></span>
+      <div class="row">
+      <div>
+      <h1>Full Paper Submission Tutorial</h1>
+      <div class="row">
+        <div class="col-12">
           <p>1. Sign in to your account.</p>
           <img src="../images/tutorials/account-registration-tutorial/a.png" class="rounded mb-3 img-tutorial">
           <p>2. Go to your EDAS profile for ICST Conference and click <code>“blue button</code>” in Review manuscript to upload your full paper.</p>
@@ -243,12 +289,29 @@
           <p> 4.  Your full paper has been submitted. </p>
           <img src="../images/tutorials/account-registration-tutorial/4.jpg" class="rounded mb-3 img-tutorial">
           <p>If you require further assistance with submitting your full paper, please <a href="mailto:icst@ugm.ac.id">email</a> the conference’s contact person.</p>
+          <div>
+            <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+          </div>
             </div>
             </div>
             </div>
           </div>
           <div class="row py-5">
             
+          <div class="row py-5">
+            <!-- CARD: NEXT TUTORIAL -->
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Next tutorial</h3>
+                </div>
+                <div class="card-block text-center">
+                  <h4 class="card-title text-left">Ready to Submit?</h4>
+                  <p class="card-text text-left">If your paper has been registered, you can submit your full paper.</p>
+                  <a href="https://edas.info/N24559" class="btn btn-primary text-uppercase">Submit full paper</a>
+                </div>
+              </div>
+            </div>
             <!-- CARD: DOWNLOAD -->
             <div class="col-sm-6">
               <div class="card text-center">
@@ -257,22 +320,43 @@
                 </div>
                 <div class="card-block">
                   <p class="card-text">
-                    <a href="../downloads/epaper-guidebook.pdf"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
-                    <a href="../downloads/epaper-guidebook.pdf" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
+                    <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-    
+
+          <!-- 
+            
+            <div class="col-sm-5">
+              <div class="col-sm mb-5">
+                <div class="card">
+                  <div class="card-header bg bg-primary">
+                    <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Ready to Sumbit</h3>
+                  </div>
+                  <div class="card-block text-center">
+                  <p class="card-text text-left">If your paper has been registered, you can submit your full paper.</p>
+                  <a href="https://edas.info/N24559" class="btn btn-primary text-uppercase">Submit full paper</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-5">
+              <div class="card text-center">
+              <div class="card-header bg-primary">
+                <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0">Download EDAS Guidebook</h3>
+                </div>
+                <div class="card-block">
+                <p class="card-text">
+                    <a href="../downloads/epaper-guidebook.pdf"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="../downloads/epaper-guidebook.pdf" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"> </i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+   -->
 
     <!-- FOOTER -->
     <footer class="footer">
