@@ -20,7 +20,7 @@ This is the website for The 4<sup>th</sup> International Conference on Science a
 ### Development
 
 + Based on [Bootstrap 4.0.0-alpha.6](https://v4-alpha.getbootstrap.com/)
-+ Based on ICST 2017 Website by [Joaquim Baeta](https://github.com/jaebaeta/icst-2017)
++ Based on [ICST 2017 Website](https://github.com/jaybaeta/icst-2017) by [Joaquim Baeta](https://github.com/jaybaeta/)
 
 ### Icons
 
