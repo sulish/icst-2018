@@ -46,7 +46,7 @@ All symposia images are licensed under the Creative Commons via Flickr.
 + Electronics, Communication, Control, and Instrumentation: [NASA's Marshall Space Flight Center](https://www.flickr.com/photos/nasamarshall/33350284091/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
 + Environmental and Earth Science: [Vilma](https://www.flickr.com/photos/vil/4464588404/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
 + Material Science and Chemistry: [Catface27](https://www.flickr.com/photos/catsanchez/15951257277/); [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
-+ Mechanical and Industrial Engineering: [Christophe Nguyen](https://www.flickr.com/photos/christophenguyen/8548743119/); [All rights reserved]
++ Mechanical and Industrial Engineering: [Andrew Magill](https://www.flickr.com/photos/amagill/3268315787/); [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)
 + Power and Energy: [Nate2b](https://www.flickr.com/photos/napdsp/4991007667/); [CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)
 + Remote Sensing and Geomatics: [NASA's Marshall Space Flight Center](https://www.flickr.com/photos/nasamarshall/25096846628/); [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
 
