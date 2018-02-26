@@ -9992,4 +9992,19 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   margin-top: -40px;
   height: 40px;
 }
+
+
+
+.nav-item a {
+  color: grey;
+}
+
+.nav-item a.active span {
+  background: #1d73cc;
+}
+
+.nav-item a.active {
+  color: #1d73cc !important;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
