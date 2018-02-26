@@ -90,6 +90,7 @@
             <div class="dropdown-menu scrollable-menu" role="menu">
               <a class="dropdown-item" href="../article/fees.html">Fees</a>
               <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Payment procedure</span>
+              <a class="dropdown-item" href="../article/payment-confirmation-presenter.html">Payment confirmation</a>
               <div class="dropdown-divider"></div>
               <span class="dropdown-item disabled" style="color: #7FA3CB;">Presenter guidelines</span>
               <a class="dropdown-item" href="../article/author-guidelines.html">Author guidelines</a>
@@ -97,7 +98,7 @@
               <a class="dropdown-item" href="../article/downloads.html">Download guidelines and templates</a>
               <div class="dropdown-divider"></div>
               <span class="dropdown-item disabled" style="color: #7FA3CB;">Tutorials and help</span>
-             <a class="dropdown-item" href="../article/edas.html">Edas</a>
+             <a class="dropdown-item" href="../article/edas-tutorial.html">Edas</a>
               <a class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed" href="../article/ttp.html">Trans Tech Publications</a>
               <a class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed" href="../article/download-guidebook-presenters.html">Download Guidebook</a>
               
@@ -113,6 +114,7 @@
             <div class="dropdown-menu" role="menu">
               <a class="dropdown-item" href="../article/fees.html">Fees</a>
               <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Payment procedure</span>
+              <a class="dropdown-item" href="../article/payment-confirmation-non-presenter.html">Payment confirmation</a>
               <div class="dropdown-divider"></div>
               <span class="dropdown-item disabled" style="color: #7FA3CB;">Tutorials and help</span>
               <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Account Registration</span>
@@ -122,14 +124,14 @@
             </div>
           </li>
           <!-- MEDIA -->
-          <!--<li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown">Media</a>
             <div class="dropdown-menu dropdown-menu-right" role="menu">
               <a class="dropdown-item" href="../article/icst-2017-in-images-and-words.html">The ICST 2018 in images and words</a>
               <a class="dropdown-item" href="https://flic.kr/s/aHsm3pHwZd">Images from the conference (Flickr)</a>
             </div>
           </li>
-          <!-- DOWNLOADS -->
+          <!-- <!DOWNLOADS  -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="../index.html" data-toggle="dropdown">Downloads</a>
             <div class="dropdown-menu dropdown-menu-right scrollable-menu" role="menu">
@@ -147,6 +149,19 @@
       <a href="../article/submissions.html" class="btn btn-success nav-register text-uppercase">Register</a>
     </nav>
 
+    <div class="container pb-5" >
+    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active program-title" data-toggle="tab" href="#day1" role="tab"><span class="badge badge-default badge-pill mr-md-2">1</span><br class="hidden-md-up"> Account Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link program-title" data-toggle="tab" href="#day2" role="tab"><span class="badge badge-default badge-pill mr-md-2">2</span><br class="hidden-md-up"> Paper Submission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link program-title" data-toggle="tab" href="#" role="tab"><span class="badge badge-default badge-pill mr-md-2">3</span><br class="hidden-md-up"> Camera ready</a>
+        </li>
+      </ul>
+
     <!-- BREADCRUMBS -->
     <div class="container">
       <nav class="breadcrumb" style="background-color: transparent">
@@ -156,9 +171,9 @@
     </div>
 
     <!-- CONTENT -->
-    
-    <div class="container pb-5" >
-      <span id="edas" class="title"></span>
+    <div class="tab-content" >
+    <div id="day1" class="=container pb-5 tab-pane active" role="tabpanel">
+      <span class="title"></span>
       <div class="row">
       <div>
       <h1>EDAS Account Registration Tutorial</h1>
@@ -223,8 +238,39 @@
           <div>
             <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
           </div>
-          <br>
-          <h1>EDAS Full Paper Submission Tutorial</h1>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="row py-5">
+            
+            <!-- CARD: DOWNLOAD -->
+            <div class="col-sm-6">
+              <div class="card text-center">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Download EDAS Guidebook</h3>
+                </div>
+                <div class="card-block">
+                  <p class="card-text">
+                    <!-- <a href="../downloads/epaper-guidebook.pdf"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br> -->
+                    <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    <!--PAPER SUBMISSION-->
+    
+    <div id="day2" class="=container tab-pane fade " role="tabpanel">
+      <span class="title"></span>
+      <div class="row">
+      <div>
+      <h1>Full Paper Submission Tutorial</h1>
+      <div class="row">
+        <div class="col-12">
           <p>1. Sign in to your account.</p>
           <img src="../images/tutorials/account-registration-tutorial/a.png" class="rounded mb-3 img-tutorial">
           <p>2. Go to your EDAS profile for ICST Conference and click <code>“blue button</code>” in Review manuscript to upload your full paper.</p>
@@ -243,12 +289,29 @@
           <p> 4.  Your full paper has been submitted. </p>
           <img src="../images/tutorials/account-registration-tutorial/4.jpg" class="rounded mb-3 img-tutorial">
           <p>If you require further assistance with submitting your full paper, please <a href="mailto:icst@ugm.ac.id">email</a> the conference’s contact person.</p>
+          <div>
+            <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+          </div>
             </div>
             </div>
             </div>
           </div>
           <div class="row py-5">
             
+          <div class="row py-5">
+            <!-- CARD: NEXT TUTORIAL -->
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Next tutorial</h3>
+                </div>
+                <div class="card-block text-center">
+                  <h4 class="card-title text-left">Ready to Submit?</h4>
+                  <p class="card-text text-left">If your paper has been registered, you can submit your full paper.</p>
+                  <a href="https://edas.info/N24559" class="btn btn-primary text-uppercase">Submit full paper</a>
+                </div>
+              </div>
+            </div>
             <!-- CARD: DOWNLOAD -->
             <div class="col-sm-6">
               <div class="card text-center">
@@ -257,22 +320,43 @@
                 </div>
                 <div class="card-block">
                   <p class="card-text">
-                    <a href="../downloads/epaper-guidebook.pdf"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
-                    <a href="../downloads/epaper-guidebook.pdf" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
+                    <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-    
+
+          <!-- 
+            
+            <div class="col-sm-5">
+              <div class="col-sm mb-5">
+                <div class="card">
+                  <div class="card-header bg bg-primary">
+                    <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Ready to Sumbit</h3>
+                  </div>
+                  <div class="card-block text-center">
+                  <p class="card-text text-left">If your paper has been registered, you can submit your full paper.</p>
+                  <a href="https://edas.info/N24559" class="btn btn-primary text-uppercase">Submit full paper</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-5">
+              <div class="card text-center">
+              <div class="card-header bg-primary">
+                <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0">Download EDAS Guidebook</h3>
+                </div>
+                <div class="card-block">
+                <p class="card-text">
+                    <a href="../downloads/epaper-guidebook.pdf"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="../downloads/epaper-guidebook.pdf" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"> </i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+   -->
 
     <!-- FOOTER -->
     <footer class="footer">
@@ -336,8 +420,7 @@
         <div class="row">
           <div class="container">
             <hr class="mx-auto my-3" style="border-color: #e3e3f3; width: 80%;">
-            <p class="text-muted">The International Conference on Science and Technology 2018, organized by <a href="http://publikasi.ugm.ac.id/">BPP UGM</a>. Website developed by <a href="http://joaquimbaeta.com/">Joaquim Baeta</a> and <a href="https://github.com/akhsin">Akhsin Nurlayli</a>, with contributions from <a href="https://github.com/tikadyota">Kartikadyota</a>, <a href="https://www.linkedin.com/in/wildan-ainurrahman-563948128/">Wildan A</a>, <a href="https://www.linkedin.com/in/muhammad-rafieiy/">Rafieiy</a>, and <a href="https://www.linkedin.com/in/nurul-hasanah-99247a128/">Nurul Hasanah</a>. UGM and ICST logos © Universitas Gadjah Mada. Website © 2017 Joaquim Baeta under the <a href="https://github.com/jaybaeta/icst-2017/blob/master/LICENSE.md">MIT License</a>, based on <a href="https://v4-alpha.getbootstrap.com">Bootstrap</a> 4.0.0-alpha.6. Website content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted. Icons by <a href="http://fontawesome.io">Font Awesome</a> (by Dave Gandy; <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>; <a href="http://opensource.org/licenses/mit-license.html">MIT</a>), <a href="https://www.iconfinder.com/webalys">Webalys</a> (free for commercial use), <a href="https://www.iconfinder.com/bocatutor">Boca Tutor</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>), <a href="https://www.iconfinder.com/Sergt">Sergey Toropov</a> (free for commercial use), and Joaquim Baeta (<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>). Jumbotron background by <a href="http://www.freepik.com">Freepik</a> (modified; free license).</p>
-
+            <p class="text-muted">The International Conference on Science and Technology 2018, organized by <a href="http://publikasi.ugm.ac.id/">BPP UGM</a>. Website developed by <a href="https://github.com/akhsin">Akhsin Nurlayli</a>, <a href="https://github.com/febriyanyoga">Febriyan Yoga</a>, and <a href="https://github.com/sulish">Sulis Setiowati</a>, with contributions from <a href="https://www.linkedin.com/in/wildan-ainurrahman-563948128/">Wildan A</a>, and <a href="https://www.linkedin.com/in/muhammad-rafieiy/">Rafieiy</a>. UGM and ICST logos © Universitas Gadjah Mada. Website © 2018 Badan Penerbit dan Publikasi UGM under the <a href="https://github.com/bppugm/icst-2018/blob/master/LICENSE.md">MIT License</a>, based on <a href="https://github.com/jaybaeta/icst-2017">ICST 2017 Website</a> by <a href="https://github.com/jaybaeta/">Joaquim Baeta</a>, using <a href="https://v4-alpha.getbootstrap.com">Bootstrap</a> 4.0.0-alpha.6. Website content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted. Icons by <a href="http://fontawesome.io">Font Awesome</a> (by Dave Gandy; <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>; <a href="http://opensource.org/licenses/mit-license.html">MIT</a>), <a href="https://www.iconfinder.com/webalys">Webalys</a> (free for commercial use), <a href="https://www.iconfinder.com/bocatutor">Boca Tutor</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>), <a href="https://www.iconfinder.com/Sergt">Sergey Toropov</a> (free for commercial use), and Joaquim Baeta (<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>). Jumbotron background by <a href="http://www.freepik.com">Freepik</a> (modified; free license). Symposia images by <a href="https://www.flickr.com/photos/arselectronica/37525627164/">Ars Electronica / Robert Bauernhansl</a> (<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), <a href="https://www.flickr.com/photos/jcubic/12237986156/">Jakub Jankiewicz</a> (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>), <a href="https://www.flickr.com/photos/vil/4464588404/">Vilma</a> (<a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>), <a href="https://www.flickr.com/photos/catsanchez/15951257277/">Catface27</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>), <a href="https://www.flickr.com/photos/amagill/3268315787/">Andrew Magill</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>), <a href="https://www.flickr.com/photos/napdsp/4991007667/">Nate2b</a> (<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), and <a href="https://www.flickr.com/photos/nasamarshall/25096846628/">NASA's Marshall Space Flight Center</a> (<a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>)</p>
           </div>
         </div>
       </div>
