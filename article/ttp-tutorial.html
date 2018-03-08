@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+  <title>TTP tutorial - ICST 2018</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css">
+
+  <!-- CSS -->
+  <link href="../stylesheets/site.css" rel="stylesheet" />
+
+  <!-- JAVASCRIPT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+  <script src="../javascripts/all.js"></script>
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="../images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="../images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="../images/favicon/manifest.json">
+  <link rel="shortcut icon" href="../images/favicon/favicon.ico">
+  <meta name="msapplication-config" content="../images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body class="article article_account-registration-tutorial-presenters">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-toggleable-md navbar-light sticky-top" style="background-color: #f8f7fd; border-bottom: 1px solid #eaeaf6">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#icst-nav" aria-controls="icst-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="../index.html"><img src="../images/logos/logo.svg" width="100px"></a>
+    <!-- COLLAPSE -->
+    <div class="collapse navbar-collapse" id="icst-nav">
+      <ul class="navbar-nav ml-auto text-uppercase">
+        <!-- ABOUT -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="../index.html" data-toggle="dropdown">About</a>
+          <div class="dropdown-menu" role="menu">
+            <span class="dropdown-item disabled" style="color: #7FA3CB;">The conference</span>
+            <a class="dropdown-item" href="../article/about.html">Introduction</a>
+            <a class="dropdown-item" href="../article/venue.html">Conference venue</a>
+            <a class="dropdown-item" href="../article/fees.html">Conference fees</a>
+              <!--<a class="dropdown-item" href="../article/conference-program.html">Conference program</a>
+                <a class="dropdown-item" href="../article/list-of-participants.html">List of participants</a>-->
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../article/about-ugm.html">Universitas Gadjah Mada</a>
+                <a class="dropdown-item" href="https://www.yogyes.com/">Yogyakarta</a>
+              </div>
+            </li>
+            <!-- SYMPOSIA -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../article/symposia.html" data-toggle="dropdown">Satellite events</a>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="../article/symposia.html">All events</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../article/computer-and-information-technology.html">Computer and Information technology</a>
+                <a class="dropdown-item" href="../article/electronics-communication-control-and-instrumentation.html">Electronics, Communication, Control, and Instrumentation</a>
+                <a class="dropdown-item" href="../article/environmental-and-earth-science.html">Environmental and Earth Science</a>
+                <a class="dropdown-item" href="../article/material-science-and-chemistry.html">Material Science and Chemistry</a>
+                <a class="dropdown-item" href="../article/mechanical-and-industrial-engineering.html">Mechanical and Industrial Engineering</a>
+                <a class="dropdown-item" href="../article/power-and-energy.html">Power and Energy</a>
+                <a class="dropdown-item" href="../article/remote-sensing-and-geomatics.html">Remote Sensing and Geomatics</a>
+              </div>
+            </li>
+            <!--PUBLICATIONS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../article/publications.html" data-toggle="dropdown">Publications</a>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="../article/publications.html">All publications</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../article/ieee.html">IEEE</a>
+                <a class="dropdown-item" href="../article/e3s.html">E3S</a>
+                <a class="dropdown-item" href="../article/ttp.html">TTP</a>
+              </div>
+            </li>
+            <!-- PRESENTERS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../index.html" data-toggle="dropdown">Presenters</a>
+              <div class="dropdown-menu scrollable-menu" role="menu">
+                <a class="dropdown-item" href="../article/fees.html">Fees</a>
+                <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Payment procedure</span>
+                <a class="dropdown-item" href="../article/payment-confirmation-presenter.html">Payment confirmation</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-item disabled" style="color: #7FA3CB;">Presenter guidelines</span>
+                <a class="dropdown-item" href="../article/author-guidelines.html">Author guidelines</a>
+                <a class="dropdown-item" href="../article/presentation-guidelines.html">Presentation guidelines</a>
+                <a class="dropdown-item" href="../article/downloads.html">Download guidelines and templates</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-item disabled" style="color: #7FA3CB;">Tutorials and help</span>
+                <a class="dropdown-item" href="../article/edas-tutorial.html">EDAS</a>
+                <a class="dropdown-item" href="../article/ttp-tutorial.html">TTP</a>
+
+                <a class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed" href="../downloads/ICST2018-registration-guidebook.pdf">Download guidebook</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../article/submissions.html">Submit now</a>
+              </div>
+            </li>
+            <!-- NON-PRESENTERS -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../index.html" data-toggle="dropdown">Non-presenters</a>
+              <div class="dropdown-menu" role="menu">
+                <a class="dropdown-item" href="../article/fees.html">Fees</a>
+                <span class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed">Payment procedure</span>
+                <a class="dropdown-item" href="../article/payment-confirmation-non-presenter.html">Payment confirmation</a>
+                <div class="dropdown-divider"></div>
+                <span class="dropdown-item disabled" style="color: #7FA3CB;">Tutorials and help</span>
+                <a class="dropdown-item" href="../article/foreign-attendant-non-presenter-tutorial.html">Foreign attendant</a>
+                <a class="dropdown-item" href="../article/local-attendant-non-presenter-tutorial.html">Local attendant</a>
+                <a class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed" href="../downloads/ICST2018-registration-guidebook.pdf">Download guidebook</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../article/submissions.html">Register now</a>
+              </div>
+            </li>
+            <!-- MEDIA -->
+          <!--<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" data-toggle="dropdown">Media</a>
+            <div class="dropdown-menu dropdown-menu-right" role="menu">
+              <a class="dropdown-item" href="../article/icst-2017-in-images-and-words.html">The ICST 2018 in images and words</a>
+              <a class="dropdown-item" href="https://flic.kr/s/aHsm3pHwZd">Images from the conference (Flickr)</a>
+            </div>
+          </li>-->
+          <!-- DOWNLOADS -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../index.html" data-toggle="dropdown">Downloads</a>
+            <div class="dropdown-menu dropdown-menu-right scrollable-menu" role="menu">
+              <a class="dropdown-item" href="../article/downloads.html">View all downloads</a>
+              <div class="dropdown-divider"></div>
+              <!--<a class="dropdown-item" href="../downloads/ComputerSymposiumGuidelines.zip">Computer guidelines</a>-->
+              <!--<a class="dropdown-item" href="../downloads/epaper-guidebook.pdf">ePaper guidebook</a>-->
+              <a class="dropdown-item" href="../downloads/ICST2018-poster.png">ICST 2018 poster</a>
+              <a class="dropdown-item disabled" style="color: rgba(0,0,0,0.2); cursor:not-allowed" href="../downloads/ICST2018-registration-guidebook.pdf">Registration guidebook</a>
+              <a class="dropdown-item" href="../downloads/ICST2018-presentation-guidelines.pdf">Presentation guidelines</a>
+              <a class="dropdown-item" href="../downloads/ieee-template.zip">IEEE Template</a>
+              <a class="dropdown-item" href="../downloads/e3s-template.zip">E3S Template</a>
+              <a class="dropdown-item" href="../downloads/ttp-template.zip">TTP Template</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- REGISTER -->
+      <a href="../article/submissions.html" class="btn btn-success nav-register text-uppercase">Register</a>
+    </nav>
+
+    <!-- BREADCRUMBS -->
+    <div class="container">
+      <nav class="breadcrumb" style="background-color: transparent">
+        <a class="breadcrumb-item" href="../index.html">Home</a>
+        <span class="breadcrumb-item active">Trans Tech Publications Tutorial</span>
+      </nav>
+    </div>
+
+    <div class="container pb-5">
+      <h1>Trans Tech Publications Tutorial</h1>
+      <br><br>
+
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active program-title" data-toggle="tab" href="#accountRegistration" role="tab"><span class="badge badge-default badge-pill mr-md-2">1</span><br class="hidden-md-up"> Account Registration</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link program-title" data-toggle="tab" href="#paperSubmission" role="tab"><span class="badge badge-default badge-pill mr-md-2">2</span><br class="hidden-md-up"> Paper Submission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link program-title" data-toggle="tab" href="#cameraReady" role="tab"><span class="badge badge-default badge-pill mr-md-2">3</span><br class="hidden-md-up"> Camera ready</a>
+        </li>
+      </ul>
+
+      <!-- CONTENT -->
+      <div class="tab-content" >
+        <div id="accountRegistration" class = "tab-pane active" role="tabpanel">
+          <div class="row pt-5">
+            <div class="col-12">
+              <p>This tutorial will guide you through the registration of your <code>Scientific.Net</code> account. If you already have a Scientific.Net account, please<a href="http://scientific.net/account/login"> log in</a> to submit your paper using your registered account</p>
+              <p>1. Go to the <code>Trans Tech Publications'</code> site. </p>
+              <img src="../images/tutorials/ttp-account-registration-tutorial/1.png" class="rounded mb-3 img-tutorial">
+              <p>Alternatively, you can click the <code>Register</code> button on the ICST website.</p>
+              <img src="../images/tutorials/ttp-account-registration-tutorial/1-b.png" class="rounded mb-3 img-tutorial">
+              <p>Then, click the <code> Submit paper </code> button under the Trans Tech Publications card, which will redirect you to the Trans Tech Publication site.</p>
+              <img src="../images/tutorials/ttp-account-registration-tutorial/1-c.png" class="rounded mb-3 img-tutorial">
+              <!-- ALERT NOTES -->
+              <p>2. Below the login form, click <code>Register now</code>.</p>
+              <img src="../images/tutorials/ttp-account-registration-tutorial/2.png" class="rounded mb-3 img-tutorial">
+              <p>3. Enter your details and click <code>Register</code> button to create your account. The verification link will be sent to your email.</p>
+             <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <ul class="fa-ul" style="margin-bottom: 0rem;">
+                  <li>
+                    <i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i>All the information details must be filled.
+                  </li>
+                </ul>
+              </div>
+              <img src="../images/tutorials/ttp-account-registration-tutorial/3.png" class="rounded mb-3 img-tutorial">
+              <p>4. Verify your account by clicking the <code>link</code> in your email.</p>
+              <img src="../images/tutorials/ttp-account-registration-tutorial/4.png" class="rounded mb-3 img-tutorial">
+              <p>5. Your account has been created. </p>
+              <img src="../images/tutorials/ttp-account-registration-tutorial/5.png" class="rounded mb-3 img-tutorial">
+              <div>
+                <p>If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row py-5">
+
+            <!-- CARD: DOWNLOAD -->
+          <div class="col-sm-6">
+              <div class="card text-center">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Download TTP Guidebook</h3>
+                </div>
+                <div class="card-block">
+                  <p class="card-text">
+                    <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--PAPER SUBMISSION-->
+        <div id="paperSubmission" class= "tab-pane" role="tabpanel">
+          <div class="row pt-5">
+            <div class="col-12">
+              <p>This tutorial will guide you through the submission of your paper.</p>
+              <p>1. Log in to your account.</p>
+              <img src="../images/tutorials/ttp-paper-submission-tutorial/1.png" class="rounded mb-3 img-tutorial">
+              <p>2. Once you are logged in, click <code>Participant</code> on the top menu. On the participant home tab download the doc or "LaTex" template to prepare the manuscript in accordance with the publisher’s technical requirements.</p>
+              <img src="../images/tutorials/ttp-paper-submission-tutorial/2.png" class="rounded mb-3 img-tutorial">
+              <p>3. Click the upload tab to start the submission process. Complete the six stages listed on the left-side menu.</p>
+              <ul>
+                <li>
+                  Files. Click browse to find the word/"LaTeX" or PDF files of the paper on your computer, then click upload. Click the PDF icon in the uploaded files area. When the file is opened check whether all the text is within the red frame. If there is any text outside, adjust the formatting of your document and re-upload the new versions of your files (word/"LaTeX" and corresponding PDF).
+                </li>
+                <li>
+                  Edit the paper. Type the paper title and abstract.
+                </li>
+                <li>
+                  Copyright Agreement. Look through the Copyright Agreement and confirm that you accept the terms.
+                </li>
+                <li>
+                  Edit authors. Add all the authors responsible for creating the paper to the list, mark the corresponding author.
+                </li>
+                <li>
+                  Edit keywords. Make a list of keywords.
+                </li>
+                <li>
+                  Comments. Leave your comments, if necessary, check the comments left by editors.
+                </li>
+              </ul>
+              <img src="../images/tutorials/ttp-paper-submission-tutorial/3.png" class="rounded mb-3 img-tutorial">
+              <p>4. On the papers tab, check the list of your papers. The progress column shows whether all the requested information was provided during the submission. Click the paper title in the table to look through the submission stages.</p>
+              <img src="../images/tutorials/ttp-paper-submission-tutorial/4.png" class="rounded mb-3 img-tutorial">
+              <p>5. If a paper requires correction after the peer review, the status changes to revisions. Click the score in the reviews column to open reviewers’ reports. Correct the paper according to the recommendations.</p>
+              <img src="../images/tutorials/ttp-paper-submission-tutorial/5.png" class="rounded mb-3 img-tutorial">
+              <p>6. To re-upload revised files click the paper title and proceed to the Step 2, number 1. Files stage. Click browse to find the revised word/"LaTeX" and PDF files of the paper on your computer, then click upload. If the files are re-uploaded the paper status changes to revised automatically and the re-uploading option closes.</p>
+              <img src="../images/tutorials/ttp-paper-submission-tutorial/6.png" class="rounded mb-3 img-tutorial">
+              <p>7. Track the editorial process by the paper status shown in the status column. Refer to the status description for a better understanding. </p>
+              <img src="../images/tutorials/ttp-paper-submission-tutorial/7.png" class="rounded mb-3 img-tutorial">
+              <p>You also can view video tutorials at this <a href="https://www.scientific.net/Info/ParticipantTools"> link</a>
+              <br>
+              If you require further assistance with submitting your full paper, please <a href="mailto:icst@ugm.ac.id"> email </a> the conference’s contact person. 
+              </p>
+            </div>
+          </div>
+          <div class="row py-5">
+            <!-- CARD: NEXT TUTORIAL -->
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Next tutorial</h3>
+                </div>
+                <div class="card-block text-center">
+                  <h4 class="card-title text-left">Ready to Submit?</h4>
+                  <p class="card-text text-left">If your account has been registered, you can submit your manuscript.</p>
+                  <a href="http://scientific.net/account/login" class="btn btn-primary text-uppercase">Submit full paper</a>
+                </div>
+              </div>
+            </div>
+            <!-- CARD: DOWNLOAD -->
+            <div class="col-sm-6">
+              <div class="card text-center">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Download TTP Guidebook</h3>
+                </div>
+                <div class="card-block">
+                  <p class="card-text">
+                    <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                    <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CAMERA READY -->
+        <div id="cameraReady" class= "tab-pane" role="tabpanel">
+          <div class="row pt-5">
+            <div class="col-12 text-muted text-center py-5">
+              <h2>We are doing some works on this page. <br> Please be right back</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container py-4" style="background-color: #f8f7fd;">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <img src="../images/logos/ugm.svg" class="px-3 my-2" height="45px">
+            <img src="../images/logos/scopus.svg" class="px-3 my-2" height="45px">
+            <img src="../images/logos/ieee.svg" class="px-3 my-2" height="45px"> 
+            <img src="../images/logos/e3s.svg" class="px-3 my-2" height="45px"> 
+            <img src="../images/logos/scientific net.svg" class="px-3 my-2" height="45px"><br>
+            <hr style="border-color: #e3e3f3; width: 80%;" class="mx-auto my-4">
+          </div>
+        </div>
+        <div class="row pt-2">
+          <div class="col-md-3">
+            <h5><b>The Conference</b></h5>
+            <p style="line-height: 2;">
+              <a href="../article/about.html">About</a> <br>
+              <a href="../article/venue.html">Venue</a> <br>
+              <a href="../article/fees.html">Fees</a> <br>
+              <a href="../article/symposia.html">Symposia</a> <br>
+              <!-- <a href="../article/publications.html">Publications</a> <br> -->
+              <a href="../article/downloads.html">Downloads</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5><b>Connect</b></h5>
+            <p style="line-height: 2;">
+              <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:icst@ugm.ac.id">icst@ugm.ac.id</a><br>
+              <i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;+6285736991226 (Akhsin Nurlayli) <br>
+              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/icstugm">@icstugm</a><br>
+              <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://instagram.com/icstugm">icstugm</a><br>
+              <i class="fa fa-flickr fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://flic.kr/icst">icst</a><br>
+              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/BPP_UGM">@BPP_UGM</a><br>
+              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/UGMYogyakarta">@UGMYogyakarta</a>
+            </p>
+          </div>
+          <div class="col-md-3">
+            <h5><b>Explore</b></h5>
+            <p style="line-height: 2;">
+              <a href="http://ugm.ac.id/id/video/24-video.profil.ugm.mengakar.kuat.menjulang.tinggi">Universitas Gadjah Mada</a> <br>
+              <a href="https://www.yogyes.com/">The city of Yogyakarta</a>
+            </p>
+            <!--<h5><b>Media</b></h5>
+            <p style="line-height: 2;">
+              <a href="../article/icst-2017-in-images-and-words.html">Relive the ICST 2018</a>
+            </p>-->
+          </div>
+          <div class="col-md-3">
+            <p class="text-center">
+              <img src="../images/logos/logo.svg" class="mb-2" height="55px"> <br>
+            </p>
+            <p>
+              <b>Chairman:</b> Dr. Eng. I Wayan Mustika<br>
+              <b>Co-Chairman:</b> Dr. Eng. Kuwat Triyana<br>
+              <b>Secretary:</b> Ratih Fitria Putri, Ph.D.<br>
+            </p> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="container">
+            <hr class="mx-auto my-3" style="border-color: #e3e3f3; width: 80%;">
+            <p class="text-muted">The International Conference on Science and Technology 2018, organized by <a href="http://publikasi.ugm.ac.id/">BPP UGM</a>. Website developed by <a href="https://github.com/akhsin">Akhsin Nurlayli</a>, <a href="https://github.com/febriyanyoga">Febriyan Yoga</a>, and <a href="https://github.com/sulish">Sulis Setiowati</a>, with contributions from <a href="https://www.linkedin.com/in/wildan-ainurrahman-563948128/">Wildan A</a>, and <a href="https://www.linkedin.com/in/rafieiy/">Rafieiy</a>. UGM and ICST logos © Universitas Gadjah Mada. Website © 2018 Badan Penerbit dan Publikasi UGM under the <a href="https://github.com/bppugm/icst-2018/blob/master/LICENSE.md">MIT License</a>, based on <a href="https://github.com/jaybaeta/icst-2017">ICST 2017 Website</a> by <a href="https://github.com/jaybaeta/">Joaquim Baeta</a>, using <a href="https://v4-alpha.getbootstrap.com">Bootstrap</a> 4.0.0-alpha.6. Website content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, except where otherwise noted. Icons by <a href="http://fontawesome.io">Font Awesome</a> (by Dave Gandy; <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a>; <a href="http://opensource.org/licenses/mit-license.html">MIT</a>), <a href="https://www.iconfinder.com/webalys">Webalys</a> (free for commercial use), <a href="https://www.iconfinder.com/bocatutor">Boca Tutor</a> (<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>), <a href="https://www.iconfinder.com/Sergt">Sergey Toropov</a> (free for commercial use), and Joaquim Baeta (<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>). Jumbotron background by <a href="https://www.linkedin.com/in/rafieiy/">Rafieiy</a> (free for comercial use). Symposia images by <a href="https://www.flickr.com/photos/arselectronica/37525627164/">Ars Electronica / Robert Bauernhansl</a> (<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), <a href="https://www.flickr.com/photos/jcubic/12237986156/">Jakub Jankiewicz</a> (<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a>), <a href="https://www.flickr.com/photos/vil/4464588404/">Vilma</a> (<a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>), <a href="https://www.flickr.com/photos/catsanchez/15951257277/">Catface27</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>), <a href="https://www.flickr.com/photos/amagill/3268315787/">Andrew Magill</a> (<a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>), <a href="https://www.flickr.com/photos/napdsp/4991007667/">Nate2b</a> (<a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">CC BY-NC-ND 2.0</a>), and <a href="https://www.flickr.com/photos/nasamarshall/25096846628/">NASA's Marshall Space Flight Center</a> (<a href="https://creativecommons.org/licenses/by-nc/2.0/">CC BY-NC 2.0</a>)</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
