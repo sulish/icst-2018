@@ -164,10 +164,10 @@
 
       <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
         <li class="nav-item">
-          <a class="nav-link active program-title" data-toggle="tab" href="#accountRegistration" role="tab"><span class="badge badge-default badge-pill mr-md-2">1</span><br class="hidden-md-up"> Account Registration</a>
+          <a class="nav-link active program-title" id="acc_regist" data-toggle="tab" href="#accountRegistration" role="tab"><span class="badge badge-default badge-pill mr-md-2">1</span><br class="hidden-md-up"> Account Registration</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link program-title" data-toggle="tab" href="#paperSubmission" role="tab"><span class="badge badge-default badge-pill mr-md-2">2</span><br class="hidden-md-up"> Paper Submission</a>
+          <a class="nav-link program-title" id="paperSubmissionTab" data-toggle="tab" href="#paperSubmission" role="tab"><span class="badge badge-default badge-pill mr-md-2">2</span><br class="hidden-md-up"> Paper Submission</a>
         </li>
         <li class="nav-item">
           <a class="nav-link program-title" data-toggle="tab" href="#cameraReady" role="tab"><span class="badge badge-default badge-pill mr-md-2">3</span><br class="hidden-md-up"> Camera ready</a>
@@ -218,7 +218,19 @@
             </div>
           </div>
           <div class="row py-5">
-
+            <!-- CARD: NEXT TUTORIAL -->
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header bg-primary">
+                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Next tutorial</h3>
+                </div>
+                <div class="card-block text-center">
+                  <h4 class="card-title text-left">Already have an account?</h4>
+                  <p class="card-text text-left">You have to activate your account or you cannot submit your full paper.</p>
+                  <a href="../article/ttp-account-activation-request.html" class="btn btn-primary text-uppercase">Account activation</a>
+                </div>
+              </div>
+            </div>
             <!-- CARD: DOWNLOAD -->
             <div class="col-sm-6">
               <div class="card text-center">
@@ -243,13 +255,13 @@
               <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <ul class="fa-ul" style="margin-bottom: 0rem;">
                   <li>
-                    <i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i>All the paper’s author must <b>register a TTP account</b> before submitting your paper. 
+                    <i class="fa fa-exclamation-triangle fa-li" aria-hidden="true"></i>All the paper’s author must <b><a href="http://scientific.net/account/login" style="color: #a94442;"> register a TTP account</a></b> before submitting your paper. 
                   </li>
                   <li>
                     <i class="fa fa fa-exclamation-circle fa-li" aria-hidden="true"></i>Please ensure that you are using the correct account to submit your paper, as an invoice will be generated for this account.
                   </li>
                   <li>
-                    <i class="fa fa-exclamation-circle fa-li" aria-hidden="true"></i>Prepare your paper in accordance with the <b>author guidelines</b> and your co-author’s TTP account.
+                    <i class="fa fa-exclamation-circle fa-li" aria-hidden="true"></i>Prepare your paper in accordance with the <b><a href="../article/author-guidelines.html" style="color: #a94442;">author guidelines</a></b> and your co-author’s TTP account.
                   </li>
                 </ul>
               </div>
@@ -276,106 +288,106 @@
                 </li>
                 <li>
                  Copyright agreement. Read carefully the copyright agreement and confirm that you accept the terms. 
-                </li>
-                <li>
-                  Edit authors. Add all the authors responsible for creating the paper to the list, mark the corresponding author.
-                </li>
-                <li>
-                  Edit keywords. Make a list of keywords. 
-                </li>
-                <li>
-                  Comments. Leave your comments, if necessary. You can also check the comments left by editors. 
-                </li>
-              </ul>
-              <img src="../images/tutorials/ttp-paper-submission-tutorial/3.png" class="rounded mb-3 img-tutorial">
-              <p>6. On the papers tab, tick the checklist and click the <code>submit button</code>. </p>
-              <img src="../images/tutorials/ttp-paper-submission-tutorial/ttp-a-4.png" class="rounded mb-3 img-tutorial">
-              <p>Your paper has been successfully submitted. You can watch the tutorial video on the <code>Scientific.Net system guide for participant</code> page. If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
-            </div>
-          </div>
-          <div class="row py-5">
-            <!-- CARD: NEXT TUTORIAL -->
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-header bg-primary">
-                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Next tutorial</h3>
-                </div>
-                <div class="card-block text-center">
-                  <h4 class="card-title text-left">Ready to Submit?</h4>
-                  <p class="card-text text-left">If your account has been registered, you can submit your manuscript.</p>
-                  <a href="http://scientific.net/account/login" class="btn btn-primary text-uppercase">Submit full paper</a>
-                </div>
-              </div>
-            </div>
-            <!-- CARD: DOWNLOAD -->
-            <div class="col-sm-6">
-              <div class="card text-center">
-                <div class="card-header bg-primary">
-                  <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Download TTP Guidebook</h3>
-                </div>
-                <div class="card-block">
-                  <p class="card-text">
-                    <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
-                    <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
-                  </p>
-                </div>
-              </div>
-            </div>
+               </li>
+               <li>
+                Edit authors. Add all the authors responsible for creating the paper to the list, mark the corresponding author.
+              </li>
+              <li>
+                Edit keywords. Make a list of keywords. 
+              </li>
+              <li>
+                Comments. Leave your comments, if necessary. You can also check the comments left by editors. 
+              </li>
+            </ul>
+            <img src="../images/tutorials/ttp-paper-submission-tutorial/3.png" class="rounded mb-3 img-tutorial">
+            <p>6. On the papers tab, tick the checklist and click the <code>submit button</code>. </p>
+            <img src="../images/tutorials/ttp-paper-submission-tutorial/ttp-a-4.png" class="rounded mb-3 img-tutorial">
+            <p>Your paper has been successfully submitted. You can watch the tutorial video on the <code>Scientific.Net system guide for participant</code> page. If you still require further assistance, please feel free to <a href="mailto:icst@ugm.ac.id">contact us</a>.</p>
           </div>
         </div>
-        <!-- CAMERA READY -->
-        <div id="cameraReady" class= "tab-pane" role="tabpanel">
-          <div class="row pt-5">
-            <div class="col-12 text-muted text-center py-5">
-              <h2>We will announce it after the paper submission deadline has passed.</h2>
+        <div class="row py-5">
+          <!-- CARD: NEXT TUTORIAL -->
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header bg-primary">
+                <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Next tutorial</h3>
+              </div>
+              <div class="card-block text-center">
+                <h4 class="card-title text-left">Ready to Submit?</h4>
+                <p class="card-text text-left">If your account has been registered, you can submit your manuscript.</p>
+                <a href="http://scientific.net/account/login" class="btn btn-primary text-uppercase">Submit full paper</a>
+              </div>
+            </div>
+          </div>
+          <!-- CARD: DOWNLOAD -->
+          <div class="col-sm-6">
+            <div class="card text-center">
+              <div class="card-header bg-primary">
+                <h3 class="card-title text-uppercase text-center text-white" style="font-weight: 300; font-size: 1.4rem; margin-bottom: 0;">Download TTP Guidebook</h3>
+              </div>
+              <div class="card-block">
+                <p class="card-text">
+                  <a href="#"><img src="../images/icons/pdf.svg" style="width: 90px"></a> <br>
+                  <a href="#" class="btn btn-primary mt-4" style="width: 90px"><i class="fa fa-download" aria-hidden="true"></i></a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container py-4" style="background-color: #f8f7fd;">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <img src="../images/logos/ugm.svg" class="px-3 my-2" height="45px">
-            <img src="../images/logos/scopus.svg" class="px-3 my-2" height="45px">
-            <img src="../images/logos/ieee.svg" class="px-3 my-2" height="45px"> 
-            <img src="../images/logos/e3s.svg" class="px-3 my-2" height="45px"> 
-            <img src="../images/logos/scientific net.svg" class="px-3 my-2" height="45px"><br>
-            <hr style="border-color: #e3e3f3; width: 80%;" class="mx-auto my-4">
+      <!-- CAMERA READY -->
+      <div id="cameraReady" class= "tab-pane" role="tabpanel">
+        <div class="row pt-5">
+          <div class="col-12 text-muted text-center py-5">
+            <h2>We will announce it after the paper submission deadline has passed.</h2>
           </div>
         </div>
-        <div class="row pt-2">
-          <div class="col-md-3">
-            <h5><b>The Conference</b></h5>
-            <p style="line-height: 2;">
-              <a href="../article/about.html">About</a> <br>
-              <a href="../article/venue.html">Venue</a> <br>
-              <a href="../article/fees.html">Fees</a> <br>
-              <a href="../article/symposia.html">Symposia</a> <br>
-              <!-- <a href="../article/publications.html">Publications</a> <br> -->
-              <a href="../article/downloads.html">Downloads</a>
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5><b>Connect</b></h5>
-            <p style="line-height: 2;">
-              <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:icst@ugm.ac.id">icst@ugm.ac.id</a><br>
-              <i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;+6285736991226 (Akhsin Nurlayli) <br>
-              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/icstugm">@icstugm</a><br>
-              <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://instagram.com/icstugm">icstugm</a><br>
-              <i class="fa fa-flickr fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://flic.kr/icst">icst</a><br>
-              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/BPP_UGM">@BPP_UGM</a><br>
-              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/UGMYogyakarta">@UGMYogyakarta</a>
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5><b>Explore</b></h5>
-            <p style="line-height: 2;">
-              <a href="http://ugm.ac.id/id/video/24-video.profil.ugm.mengakar.kuat.menjulang.tinggi">Universitas Gadjah Mada</a> <br>
-              <a href="https://www.yogyes.com/">The city of Yogyakarta</a>
-            </p>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container py-4" style="background-color: #f8f7fd;">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <img src="../images/logos/ugm.svg" class="px-3 my-2" height="45px">
+          <img src="../images/logos/scopus.svg" class="px-3 my-2" height="45px">
+          <img src="../images/logos/ieee.svg" class="px-3 my-2" height="45px"> 
+          <img src="../images/logos/e3s.svg" class="px-3 my-2" height="45px"> 
+          <img src="../images/logos/scientific net.svg" class="px-3 my-2" height="45px"><br>
+          <hr style="border-color: #e3e3f3; width: 80%;" class="mx-auto my-4">
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-md-3">
+          <h5><b>The Conference</b></h5>
+          <p style="line-height: 2;">
+            <a href="../article/about.html">About</a> <br>
+            <a href="../article/venue.html">Venue</a> <br>
+            <a href="../article/fees.html">Fees</a> <br>
+            <a href="../article/symposia.html">Symposia</a> <br>
+            <!-- <a href="../article/publications.html">Publications</a> <br> -->
+            <a href="../article/downloads.html">Downloads</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5><b>Connect</b></h5>
+          <p style="line-height: 2;">
+            <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:icst@ugm.ac.id">icst@ugm.ac.id</a><br>
+            <i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;+6285736991226 (Akhsin Nurlayli) <br>
+            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/icstugm">@icstugm</a><br>
+            <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://instagram.com/icstugm">icstugm</a><br>
+            <i class="fa fa-flickr fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://flic.kr/icst">icst</a><br>
+            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/BPP_UGM">@BPP_UGM</a><br>
+            <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a href="https://twitter.com/UGMYogyakarta">@UGMYogyakarta</a>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <h5><b>Explore</b></h5>
+          <p style="line-height: 2;">
+            <a href="http://ugm.ac.id/id/video/24-video.profil.ugm.mengakar.kuat.menjulang.tinggi">Universitas Gadjah Mada</a> <br>
+            <a href="https://www.yogyes.com/">The city of Yogyakarta</a>
+          </p>
             <!--<h5><b>Media</b></h5>
             <p style="line-height: 2;">
               <a href="../article/icst-2017-in-images-and-words.html">Relive the ICST 2018</a>
