@@ -223,10 +223,10 @@
               <label class="radio-inline">You Must Pay : 
                 <br>
                 <label id="early">Early Bird : </label>
-                <input type="text" name="costearly" id="costearly">
+                <input class="number" type="text" name="costearly" id="costearly">
                 <br>
                 <label id="regular">Regular : </label>
-                <input type="text" name="costreg" id="costreg">
+                <input class="number" type="text" name="costreg" id="costreg">
               </label>
             </div>
 
@@ -311,9 +311,9 @@
   </footer>
 </body>
 </html>
-
+<script type="text/javascript" src="../javascripts/jquery.formatCurrency-1.4.0.js"></script>
 <script type="text/javascript">
-  $('#count').click(function(){
+ $('#count').click(function(){
     var presenter = parseInt($('input[name="presenter"]:checked').val());//presenter
     var from = parseInt($('input[name="from"]:checked').val());//presenter no
     var from2 = parseInt($('input[name="from2"]:checked').val()); //presenter yes
@@ -330,8 +330,8 @@
     if(presenter == 2){//no
       $("#text").removeAttr("required");
       if(from == 1){ //yes
-        $('#costreg').val('1500000');
-        $('#costearly').val('1000000');
+        $('#costreg').val(1500000).formatCurrency();
+        $('#costearly').val(1000000).formatCurrency();
       }else{ //no
         if(from == 2){
           $('#costearly').val('USD150');
@@ -345,25 +345,25 @@
           if(ieee == 1 && numofpaper != ''){
             var costearly = 2000000+(1500000*(parseInt(numofpaper)-1)); 
             var costreg = 3000000+(1500000*(parseInt(numofpaper)-1)); 
-            $('#costearly').val(costearly);
-            $('#costreg').val(costreg);
+            $('#costearly').val(costearly).formatCurrency();
+            $('#costreg').val(costreg).formatCurrency();
           }else if (ieee == 2 && numofpaper != ''){
            var costearly = 2500000+(2000000*(parseInt(numofpaper)-1)); 
            var costreg = 3500000+(2000000*(parseInt(numofpaper)-1)); 
-           $('#costearly').val(costearly);
-           $('#costreg').val(costreg); 
+           $('#costearly').val(costearly).formatCurrency();
+           $('#costreg').val(costreg).formatCurrency(); 
          }
         }else if (student == 2 && numofpaper != ''){ //no
           if(ieee == 1 && numofpaper != ''){
             var costearly = 2000000+(1500000*(parseInt(numofpaper)-1)); 
             var costreg = 3000000+(1500000*(parseInt(numofpaper)-1)); 
-            $('#costearly').val(costearly);
-            $('#costreg').val(costreg);  
+            $('#costearly').val(costearly).formatCurrency();
+            $('#costreg').val(costreg).formatCurrency();  
           }else if (ieee == 2 && numofpaper != ''){
             var costearly = 2500000+(2000000*(parseInt(numofpaper)-1)); 
             var costreg = 3500000+(2000000*(parseInt(numofpaper)-1)); 
-            $('#costearly').val(costearly);
-            $('#costreg').val(costreg); 
+            $('#costearly').val(costearly).formatCurrency();
+            $('#costreg').val(costreg).formatCurrency(); 
           }
         }
    }else if (from2 == 2 && numofpaper != ''){ //no
@@ -402,9 +402,9 @@
 
 
 
-  $(function(){
-    $("#1").hide();
-    $(":radio.pre").click(function(){
+ $(function(){
+  $("#1").hide();
+  $(":radio.pre").click(function(){
       if($(this).val() == "2"){//no
         $("#2,#3, #numofpaper, #12").hide();
         $("#1").show();
@@ -415,11 +415,5 @@
         $("#2,#3,#12,#btncount, #numofpaper").show();
       }
     });
-
-    $("#tombol").click(function() {
-      var nilai = $('input[name="lele"]:checked').val();
-              // var nilai = $("#nama2").val();
-              alert(nilai);
-            });
-  });
+});
 </script>
