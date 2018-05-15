@@ -161,123 +161,263 @@
     <!-- CONTENT -->
     <div class="container pb-5">
       <h1>Calculator</h1>
+
+      <style type="text/css">
+      .radio-tile-group {
+        box-sizing: border-box;
+        font-family: 'Helvetica Neue', sans-serif;
+      }
+
+      $primary-color: #1d73cc;
+
+      .radio-tile-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .radio-tile-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .input-container {
+        position: relative;
+        height:  7rem;
+        width:  7rem;
+        margin: 0.5rem;
+      }
+
+      .radio-button {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        cursor: pointer;
+      }
+
+      .radio-tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #1d73cc;
+        border-radius: 5px;
+        padding: 1rem;
+        transition: transform 300ms ease;
+        background: white;
+      }
+      .icon svg {
+        fill: #1d73cc;
+        width: 3rem;
+        height: 3rem;
+      }
+      .radio-tile-label {
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #1d73cc;
+      }
+
+      .radio-button:checked + .radio-tile {
+        background-color: #1d73cc;
+        border: 2px solid #1d73cc;
+        color: white;
+        transform: scale(1.1, 1.1);}
+
+        .radio-button:checked + .radio-tile  .icon svg {
+          fill: white;
+          background-color: #1d73cc;
+        }
+        .radio-button:checked + .radio-tile  .radio-tile-label {
+          color: white;
+          background-color: #1d73cc;
+        }
+      </style>
       <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <!-- Calcultor -->
-          <form>
-            <div class="form-group" id="formpre">
-              <label class="radio-inline" >Presenter?
-                <br>
-                <input type="radio" name="presenter" id="presenteryes" value="1" class="pre"> Yes
-                <br>
-                <input type="radio" name="presenter" id="presenterno" value="2" class="pre"> No
-              </label>
-            </div>
-            <!-- ==================================== -->
-            <div class="form-group" id="1">
-              <label class="radio-inline">From Indonesia ?
-                <br>
-                <input type="radio" name="from" id="fromyes" value="1" class="fro"> Yes
-                <br>
-                <input type="radio" name="from" id="fromno" value="2" class="fro"> No
-              </label>
-            </div>
 
-            <div class="form-group" id="12">
-              <label class="radio-inline">From Indonesia ?
-                <br>
-                <input type="radio" name="from2" id="fromyes2" value="1" class="fro2"> Yes
-                <br>
-                <input type="radio" name="from2" id="fromno2" value="2" class="fro2"> No
-              </label>
+        <div class="col-md-4">
+         <br><label class="radio-tile-group">Presenter?</label>
+         <div class="radio-tile-group">
+          <div class="input-container">
+            <input id="presenteryes" class="radio-button" type="radio" value="1" name="presenter" />
+            <div class="radio-tile">
+              <div class="icon walk-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M96 256V96c0-53.019 42.981-96 96-96s96 42.981 96 96v160c0 53.019-42.981 96-96 96s-96-42.981-96-96zm252-56h-24c-6.627 0-12 5.373-12 12v42.68c0 66.217-53.082 120.938-119.298 121.318C126.213 376.38 72 322.402 72 256v-44c0-6.627-5.373-12-12-12H36c-6.627 0-12 5.373-12 12v44c0 84.488 62.693 154.597 144 166.278V468h-68c-6.627 0-12 5.373-12 12v20c0 6.627 5.373 12 12 12h184c6.627 0 12-5.373 12-12v-20c0-6.627-5.373-12-12-12h-68v-45.722c81.307-11.681 144-81.79 144-166.278v-44c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <label for="presenteryes" class="radio-tile-label">Presenter</label>
             </div>
-            <!-- ==================================== -->
-            <div class="form-group" id="2">
-              <label class="radio-inline">Student?
-                <br>
-                <input type="radio" name="student" id="stuyes" value="1" class="stu"> Yes
-                <br>
-                <input type="radio" name="student" id="stuno" value="2" class="stu"> No
-              </label>
+          </div>          
+          <div class="input-container">
+            <input id="presenterno" class="radio-button" type="radio" value="2" name="presenter" />
+            <div class="radio-tile">
+              <div class="icon bike-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M421.45 285.195L376 239.746V212c0-6.627 5.373-12 12-12h24c6.627 0 12 5.373 12 12v44c0 9.957-.881 19.71-2.55 29.195zM352 96c0-53.019-42.981-96-96-96-32.574 0-61.354 16.227-78.71 41.035L352 215.746V96zm152.971 363.716L52.284 7.029c-9.373-9.373-24.569-9.373-33.941 0L7.029 18.343c-9.372 9.373-9.372 24.568 0 33.941L160 205.254v49.577c0 53.089 43.436 97.452 96.524 97.167 14.626-.078 28.471-3.44 40.854-9.366l17.746 17.746c-17.529 9.971-37.794 15.666-59.372 15.622C189.355 375.864 136 321.053 136 254.656V212c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v44c0 84.488 62.693 154.597 144 166.278V468h-68c-6.627 0-12 5.373-12 12v20c0 6.627 5.373 12 12 12h184c6.627 0 12-5.373 12-12v-20c0-6.627-5.373-12-12-12h-68v-45.722c25.625-3.682 49.396-13.172 69.942-27.083L459.717 504.97c9.373 9.373 24.569 9.373 33.941 0l11.313-11.313c9.372-9.373 9.372-24.568 0-33.941z"/>
+                </svg>
+              </div>
+              <label for="presenterno" class="radio-tile-label">Non-presenter</label>
             </div>
-            <!-- ==================================== -->
-            <div class="form-group" id="3">
-              <label class="radio-inline">IEEE member?
-                <br>
-                <input type="radio" name="ieee" id="ieeeyes" value="1" class="iee"> Yes
-                <br>
-                <input type="radio" name="ieee" id="ieeeno" value="2" class="iee"> No
-              </label>
-            </div>
-            <!-- ==================================== -->
-            <div class="form-group" id="numofpaper">
-              <label class="radio-inline">Number of Papers : 
-                <br>
-                <input type="text" name="numofpaper" id="text">
-              </label>
-            </div>
-            <div class="form-group" id="btncount">
-              <input type="button" class="btn btn-primary" name="count" id="count" value="Count">
-            </div>
-            <div class="form-group">
-              <label class="radio-inline">You Must Pay : 
-                <br>
-                <label id="early">Early Bird : </label>
-                <input class="number" type="text" name="costearly" id="costearly">
-                <br>
-                <label id="regular">Regular : </label>
-                <input class="number" type="text" name="costreg" id="costreg">
-              </label>
-            </div>
-
-          </form>
+          </div>
         </div>
+
+        <br><label class="radio-tile-group" for="sel1">Country : </label>
+        <div class="form-group">
+          <select class="form-control" id="sel1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <br><label class="radio-tile-group" id="121">From Indonesia 1?</label>
+        <div class="radio-tile-group" id="12">
+          <br>
+          <input type="radio" name="from2" id="fromyes2" value="1" class="fro2"> Yes
+          <br>
+          <input type="radio" name="from2" id="fromno2" value="2" class="fro2"> No
+        </div>
+
+        <label class="radio-tile-group" id="11">From Indonesia 2?</label>
+        <div class="radio-tile-group" id="1">
+          <br>
+          <input type="radio" name="from" id="fromyes" value="1" class="fro"> Yes
+          <br>
+          <input type="radio" name="from" id="fromno" value="2" class="fro"> No
+        </div>
+
+      </div>
+      <div class="col-md-4">
+       <br><label class="radio-tile-group" id="21">Student?</label>
+       <div class="radio-tile-group" id="2">
+        <div class="input-container">
+          <input id="drive" class="radio-button" type="radio" value="1" name="student" />
+          <div class="radio-tile">
+            <div class="icon car-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M319.4 320.6L224 416l-95.4-95.4C57.1 323.7 0 382.2 0 454.4v9.6c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-9.6c0-72.2-57.1-130.7-128.6-133.8zM13.6 79.8l6.4 1.5v58.4c-7 4.2-12 11.5-12 20.3 0 8.4 4.6 15.4 11.1 19.7L3.5 242c-1.7 6.9 2.1 14 7.6 14h41.8c5.5 0 9.3-7.1 7.6-14l-15.6-62.3C51.4 175.4 56 168.4 56 160c0-8.8-5-16.1-12-20.3V87.1l66 15.9c-8.6 17.2-14 36.4-14 57 0 70.7 57.3 128 128 128s128-57.3 128-128c0-20.6-5.3-39.8-14-57l96.3-23.2c18.2-4.4 18.2-27.1 0-31.5l-190.4-46c-13-3.1-26.7-3.1-39.7 0L13.6 48.2c-18.1 4.4-18.1 27.2 0 31.6z"/>
+              </svg>
+            </div>
+            <label for="drive" class="radio-tile-label">Student</label>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <input id="fly" class="radio-button" type="radio" value="2" name="student" />
+          <div class="radio-tile">
+            <div class="icon fly-icon">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"/>
+             </svg>
+           </div>
+           <label for="fly" class="radio-tile-label">Non-student</label>
+         </div>
+       </div>
+     </div>
+     <br><label class="radio-tile-group" id="31">IEEE member ?</label>
+     <div class="radio-tile-group" id="3">
+      <div class="input-container">
+        <input id="drive" class="radio-button" type="radio" value="1" name="ieee" />
+        <div class="radio-tile">
+          <div class="icon car-icon">
+           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zm323-128.4l-27.8-28.1c-4.6-4.7-12.1-4.7-16.8-.1l-104.8 104-45.5-45.8c-4.6-4.7-12.1-4.7-16.8-.1l-28.1 27.9c-4.7 4.6-4.7 12.1-.1 16.8l81.7 82.3c4.6 4.7 12.1 4.7 16.8.1l141.3-140.2c4.6-4.7 4.7-12.2.1-16.8z"/>
+           </svg>
+         </div>
+         <label for="drive" class="radio-tile-label">IEEE Member</label>
+       </div>
+     </div>
+
+     <div class="input-container">
+      <input id="fly" class="radio-button" type="radio" value="2" name="ieee" />
+      <div class="radio-tile">
+        <div class="icon fly-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M589.6 240l45.6-45.6c6.3-6.3 6.3-16.5 0-22.8l-22.8-22.8c-6.3-6.3-16.5-6.3-22.8 0L544 194.4l-45.6-45.6c-6.3-6.3-16.5-6.3-22.8 0l-22.8 22.8c-6.3 6.3-6.3 16.5 0 22.8l45.6 45.6-45.6 45.6c-6.3 6.3-6.3 16.5 0 22.8l22.8 22.8c6.3 6.3 16.5 6.3 22.8 0l45.6-45.6 45.6 45.6c6.3 6.3 16.5 6.3 22.8 0l22.8-22.8c6.3-6.3 6.3-16.5 0-22.8L589.6 240zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/>
+          </svg>
+        </div>
+        <label for="fly" class="radio-tile-label">Non-member</label>
       </div>
     </div>
+  </div>
+</div>
+<div class="col-md-4"><br>
+  <div class="radio-tile-container">
+   <div class="radio-tile-group" id="numofpaper"  class="form-control">
+    <label class="radio-inline">Number of Papers : 
+      <br>
+      <br>
+      <input type="text" class="form-control" name="numofpaper" id="text">
+    </label>
+  </div>
+  <div class="radio-tile-group" id="btncount"  class="form-control">
+    <input type="button" class="btn btn-primary pull-left" name="count" id="count" value="Count">
+  </div><br>
+  <div class="radio-tile-group">
+    <label class="radio-inline">You Must Pay : 
+      <br>
+      <label id="early">Early Bird : </label>
+      <input class="form-control" type="text" name="costearly" id="costearly">
+      <br>
+      <label id="regular">Regular : </label>
+      <input class="form-control" type="text" name="costreg" id="costreg">
+    </label>
+  </div>
+</div>
+</div>
+</div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container py-4" style="background-color: #f8f7fd;">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <img src="../images/logos/ugm.svg" class="px-3 my-2" height="45px"><br>
-            <img src="../images/logos/e3s.svg" class="px-3 my-2" height="40px"> 
-            <img src="../images/logos/scientific net.svg" class="px-3 my-2" height="40px">
-            <img src="../images/logos/scopus.svg" class="px-3 my-2" height="40px">
-            <img src="../images/logos/ieee.svg" class="px-3 my-2" height="40px"> 
-            <img src="../images/logos/ijc.svg" class="px-3 my-2" height="40px">
-            <hr style="border-color: #e3e3f3; width: 80%;" class="mx-auto my-4">
-          </div>
-        </div>
-        <div class="row pt-2">
-          <div class="col-md-3">
-            <h5><b>The Conference</b></h5>
-            <p style="line-height: 2;">
-              <a href="../article/about.html">About</a> <br>
-              <a href="../article/venue.html">Venue</a> <br>
-              <a href="../article/fees.html">Fees</a> <br>
-              <a href="../article/symposia.html">Symposia</a> <br>
-              <a href="../article/downloads.html">Downloads</a>
-            </p>
-            <h5><b>Explore</b></h5>
-            <p style="line-height: 2;">
-              <a target="_blank" href="http://ugm.ac.id/id/video/24-video.profil.ugm.mengakar.kuat.menjulang.tinggi">Universitas Gadjah Mada</a> <br>
-              <a target="_blank" href="https://www.yogyes.com/">The city of Yogyakarta</a>
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5><b>Connect</b></h5>
-            <p style="line-height: 2;">
-              <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:icst@ugm.ac.id">icst@ugm.ac.id</a><br>
-              <i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;+6285736991226 (Akhsin Nurlayli) <br>
-              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/icstugm">@icstugm</a><br>
-              <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://instagram.com/icstugm">icstugm</a><br>
-              <i class="fa fa-flickr fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://flic.kr/icst">icst</a><br>
-              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/BPP_UGM">@BPP_UGM</a><br>
-              <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/UGMYogyakarta">@UGMYogyakarta</a>
-            </p>
-          </div>
-          <div class="col-md-3">
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container py-4" style="background-color: #f8f7fd;">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <img src="../images/logos/ugm.svg" class="px-3 my-2" height="45px"><br>
+        <img src="../images/logos/e3s.svg" class="px-3 my-2" height="40px"> 
+        <img src="../images/logos/scientific net.svg" class="px-3 my-2" height="40px">
+        <img src="../images/logos/scopus.svg" class="px-3 my-2" height="40px">
+        <img src="../images/logos/ieee.svg" class="px-3 my-2" height="40px"> 
+        <img src="../images/logos/ijc.svg" class="px-3 my-2" height="40px">
+        <hr style="border-color: #e3e3f3; width: 80%;" class="mx-auto my-4">
+      </div>
+    </div>
+    <div class="row pt-2">
+      <div class="col-md-3">
+        <h5><b>The Conference</b></h5>
+        <p style="line-height: 2;">
+          <a href="../article/about.html">About</a> <br>
+          <a href="../article/venue.html">Venue</a> <br>
+          <a href="../article/fees.html">Fees</a> <br>
+          <a href="../article/symposia.html">Symposia</a> <br>
+          <a href="../article/downloads.html">Downloads</a>
+        </p>
+        <h5><b>Explore</b></h5>
+        <p style="line-height: 2;">
+          <a target="_blank" href="http://ugm.ac.id/id/video/24-video.profil.ugm.mengakar.kuat.menjulang.tinggi">Universitas Gadjah Mada</a> <br>
+          <a target="_blank" href="https://www.yogyes.com/">The city of Yogyakarta</a>
+        </p>
+      </div>
+      <div class="col-md-3">
+        <h5><b>Connect</b></h5>
+        <p style="line-height: 2;">
+          <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp;<a href="mailto:icst@ugm.ac.id">icst@ugm.ac.id</a><br>
+          <i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp;+6285736991226 (Akhsin Nurlayli) <br>
+          <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/icstugm">@icstugm</a><br>
+          <i class="fa fa-instagram fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://instagram.com/icstugm">icstugm</a><br>
+          <i class="fa fa-flickr fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://flic.kr/icst">icst</a><br>
+          <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/BPP_UGM">@BPP_UGM</a><br>
+          <i class="fa fa-twitter fa-fw" aria-hidden="true"></i>&nbsp;<a target="_blank" href="https://twitter.com/UGMYogyakarta">@UGMYogyakarta</a>
+        </p>
+      </div>
+      <div class="col-md-3">
             <!--<h5><b>Explore</b></h5>
             <p style="line-height: 2;">
               <a href="http://ugm.ac.id/id/video/24-video.profil.ugm.mengakar.kuat.menjulang.tinggi">Universitas Gadjah Mada</a> <br>
@@ -376,7 +516,7 @@
       }else if (ieee == 2 && numofpaper != ''){
         var costearly = 200+(100*(parseInt(numofpaper)-1)); 
         var costreg = 250+(100*(parseInt(numofpaper)-1)); 
-        $('#costearly').val('USD'+costearly);
+        $('#costearly').val('USD'+costearly)
         $('#costreg').val('USD'+costreg); 
       }
         }else if (student == 2 && numofpaper != ''){ //no
@@ -396,24 +536,17 @@
     }
   });
 
-
-
-
-
-
-
  $(function(){
-  $("#1").hide();
-  $(":radio.pre").click(function(){
-      if($(this).val() == "2"){//no
-        $("#2,#3, #numofpaper, #12").hide();
-        $("#1").show();
-      }else{//yes
-        $("#1").hide();
-        $('#costreg').val('');
-        $('#costearly').val('');
-        $("#2,#3,#12,#btncount, #numofpaper").show();
-      }
-    });
+  $("#1,#11").hide();
+  $("input:radio#presenterno").click(function(){
+    $("#2,#21,#3,#31,#numofpaper, #12,#121").hide();
+    $("#1,#11").show();
+  });
+  $("input:radio#presenteryes").click(function(){
+   $("#1,#11").hide();
+   $('#costreg').val('');
+   $('#costearly').val('');
+   $("#2,#21,#3,#31,#12,#121,#btncount, #numofpaper").show();
+ })
 });
 </script>
