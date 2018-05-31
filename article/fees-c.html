@@ -1080,8 +1080,8 @@
         <!-- <p>Please carefully read the payment procedure at <a href="http://icst.ugm.ac.id/2018/article/payment-procedure.html">http://icst.ugm.ac.id/2018/article/payment-procedure.html</a></p> -->
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary pull-left" onclick="printJS('print-area', 'html')"><i class="fa fa-print"></i> Print</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary pull-left" onclick="show(); printJS('print-area', 'html')"><i class="fa fa-print"></i> Print</button>
+        <button type="button" class="btn btn-secondary" onclick="hide()" data-dismiss="modal">Close</button>
       </div>
     </div>
 
@@ -1231,8 +1231,8 @@
         <!-- <p>Please carefully read the payment procedure at <a href="http://icst.ugm.ac.id/2018/article/payment-procedure.html">http://icst.ugm.ac.id/2018/article/payment-procedure.html</a></p> -->
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary pull-left" onclick="printJS('print-area-non', 'html')"><i class="fa fa-print"></i> Print</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary pull-left" onclick="show(); printJS('print-area-non', 'html');"><i class="fa fa-print"></i> Print</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="hide()">Close</button>
       </div>
     </div>
 
@@ -1309,6 +1309,16 @@
 
 <script type="text/javascript" src="../javascripts/jquery.formatCurrency-1.4.0.js"></script>
 <script type="text/javascript">
+  function show(){
+   $('#print-area-non').show();
+   $('#print-area').show();
+ }
+ function hide(){
+   $('#print-area-non').hide();
+   $('#print-area').hide();
+ }
+ $('#print-area-non').hide();
+ $('#print-area').hide();
  $('#count').click(function(){
     var presenter = parseInt($('input[name="presenter"]:checked').val());//presenter
     var from = $('#1 :selected').val();//presenter no
